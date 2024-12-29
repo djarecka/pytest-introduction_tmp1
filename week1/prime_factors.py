@@ -23,7 +23,11 @@ def prime_factors(n):
 
 def test_prime_factors():
     assert prime_factors(8) == [2, 2, 2]
+    assert prime_factors(18) == [2, 3, 3], f"The prime factors of 18 should be [2, 3, 3], but it is {prime_factors(18)}"
+    assert prime_factors(108) == [2, 2, 3, 3, 3], "The prime factors of 108 are [2, 2, 3, 3, 3]"
+
 
 
 if __name__ == "__main__":
     test_prime_factors()
+    print("everythning is fine")
