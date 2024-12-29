@@ -109,8 +109,6 @@ jobs:
           git push origin $BRANCH
           echo "Push"
           git push --set-upstream origin $BRANCH
-          echo "Restore main"
-          git checkout main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
